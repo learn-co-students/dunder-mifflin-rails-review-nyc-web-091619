@@ -1,0 +1,11 @@
+<h1>👨🏻‍💻List of all Employees👨🏻‍💻</h1>
+<ul>
+<% @employees.each do |employee| %>
+    <li>First Name: <%= employee.first_name%></li><br>
+    <li>Last Name: <%= employee.last_name%></li><br>
+    <li>Alias: <%= employee.alias%></li><br>
+    <li>Title: <%= employee.title%></li><br>
+    <li>Office: <%= employee.office%></li><br>
+    <li>View Employee: <%= link_to employee.first_name, employee_path(employee) %></li><br><br><br>
+<% end %>
+</ul>
