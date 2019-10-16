@@ -1,0 +1,8 @@
+<h1>👨🏻‍💻Here is your Employee Info👨🏻‍💻</h1>
+    <p>First Name: <%= @employee.first_name%></p>
+    <p>Last Name: <%= @employee.last_name%></p>
+    <p>Alias: <%= @employee.alias%></p>
+    <p>Title: <%= @employee.title%></p>
+    <p>Office: <%= @employee.office%></p>
+    <p>Dog: <%= link_to @employee.dog.name, dog_path(@employee.dog) %></p>
+
