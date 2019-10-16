@@ -1,0 +1,12 @@
+<h1>Here is Your Doogo Info:</h1>
+
+<h2>NAME: <%=@dog.name %></h2>
+<h2>BREED: <%=@dog.breed %></h2>
+<h2>AGE: <%=@dog.age %></h2>
+
+<h3>Owners: </h3>
+<ol>
+  <% @owners.each do |owner| %>
+  <li><%= link_to owner.first_name, employee_path(owner) %></li>
+  <% end %>
+</ol>
