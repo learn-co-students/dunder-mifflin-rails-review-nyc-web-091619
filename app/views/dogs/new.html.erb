@@ -1,0 +1,12 @@
+<h1>Make a new DAWG</h1>
+
+<%= form_with model: @dog do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %><br/>
+    <%= form.label :breed %>
+    <%= form.text_field :breed %><br/>
+    <%= form.label :age %>
+    <%= form.text_field :age %><br/>
+
+    <%= form.submit %><br/>
+<% end %>

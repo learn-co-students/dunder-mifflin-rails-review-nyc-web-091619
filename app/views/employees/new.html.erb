@@ -1,0 +1,19 @@
+<h1>Make a new MANS</h1>
+
+<%= form_with model: @employee do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %><br/>
+    <%= form.label :alias %>
+    <%= form.text_field :alias %><br/>
+    <%= form.label :title %>
+    <%= form.text_field :title %><br/>
+    <%= form.label :office %>
+    <%= form.text_field :office %><br/>
+    
+    <%= form.collection_select :dog_id, @dogs, :id, :name, prompt: true %><br/>
+
+    <%= form.label :img_url %>
+    <%= form.text_field :img_url %><br/>
+
+    <%= form.submit %><br/>
+<% end %>
