@@ -1,0 +1,11 @@
+<h1>All the DAWGS</h1>
+<ul>
+<% @dogs.each do |dog| %>
+    <h3>
+    <li>
+    <%= link_to dog.name, dog_path(dog) %>
+    </li>
+    </h3>
+<% end %>
+<%= link_to "make a dawg", new_dog_path %>
+</ul>
