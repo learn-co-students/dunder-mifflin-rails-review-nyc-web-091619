@@ -4,7 +4,7 @@
 
 <ul>
 <% @dogs.each do |dog| %>
-    <li> <%= link_to dog.name, dog_path(dog) %></li>
+    <li> <%= link_to dog.name, dog_path(dog) %>  (<i><%= dog.employees.count %> employees)</i></li>
 <%end %>
 
 </ul>

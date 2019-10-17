@@ -27,6 +27,7 @@ class EmployeesController < ApplicationController
         @office = @employee.office
         @dog = @employee.dog
         @dog_name = @dog.name
+        @img_url = @employee.img_url
 
     end
 
