@@ -1,0 +1,13 @@
+<p><%= link_to "Edit Employee", edit_employee_path(@employee)%> <%= link_to "All Employees", employees_path %></p>
+
+<h1><%= @employee.full_name %></h1>
+
+<p>First name: <%= @employee.first_name %></p>
+<p>Last Name: <%= @employee.last_name %></p>
+<p>Title: <%= @employee.alias %></p>
+<p>Alias: <%= @employee.title %></p>
+<p>Office: <%= @employee.office %></p>
+
+<% if @employee.img_url != nil %>
+    <p>Image: <%= image_tag @employee.img_url, size: "460x320"  %></p>
+<% end %>
