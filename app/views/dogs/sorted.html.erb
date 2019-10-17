@@ -1,0 +1,9 @@
+<h1>   Sorted Dogs </h1>
+<ol>
+<% Dog.sorted.each do |dog| %>
+   <li><%= dog.name %></li> 
+    <% end %>
+</ol>
+
+
+<%= link_to  "Dogs", dogs_path %>
