@@ -1,0 +1,6 @@
+<h1><%=@name%></h1>
+<br>
+<h2>Title: <%= @title%></h2>
+<h2>Alias: <%= @alias%></h2>
+<h2>Office: <%= @office %></h2>
+<h2>Dog: <%=link_to @dog.name, dog_path(@dog)%></h2>
